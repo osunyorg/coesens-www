@@ -28,4 +28,40 @@ items:
   descendants_targets: []
   path: "/persons"
   file: content/fr/persons/_index.html
+- title: Agenda
+  slug: agenda
+  target: "/agenda/"
+  kind: page
+  new_tab: false
+  children: []
+  descendants_targets: []
+  path: "/events"
+  file: content/fr/events/_index.html
+- title: Expositions
+  slug: expositions
+  target: "/expositions/"
+  kind: page
+  new_tab: false
+  children: []
+  descendants_targets: []
+  path: "/exhibitions"
+  file: content/fr/exhibitions/_index.html
+- title: Projets
+  slug: projets
+  target: "/projets/"
+  kind: page
+  new_tab: false
+  children: []
+  descendants_targets: []
+  path: "/projects"
+  file: content/fr/projects/_index.html
+- title: Offres d'emploi
+  slug: offres-d-emploi
+  target: "/offres-d-emploi/"
+  kind: page
+  new_tab: false
+  children: []
+  descendants_targets: []
+  path: "/jobs"
+  file: content/fr/jobs/_index.html
 
