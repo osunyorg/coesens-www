@@ -1,15 +1,6 @@
 ---
 title: Menu principal
 items:
-- title: Organisations
-  slug: organisations
-  target: "/organisations/"
-  kind: page
-  new_tab: false
-  children: []
-  descendants_targets: []
-  path: "/organizations"
-  file: content/fr/organizations/_index.html
 - title: Projets
   slug: projets
   target: "/projets/"
@@ -46,6 +37,15 @@ items:
   descendants_targets: []
   path: "/events"
   file: content/fr/events/_index.html
+- title: Organisations
+  slug: organisations
+  target: "/organisations/"
+  kind: page
+  new_tab: false
+  children: []
+  descendants_targets: []
+  path: "/organizations"
+  file: content/fr/organizations/_index.html
 - title: Personnes
   slug: personnes
   target: "/personnes/"
