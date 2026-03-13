@@ -43,8 +43,18 @@ items:
     descendants_targets: []
     path: "/posts"
     file: content/fr/posts/_index.html
+  - title: Champs d'intervention
+    slug: champs-d-intervention
+    target: "/nos-champs-dintervention/"
+    kind: page
+    new_tab: false
+    children: []
+    descendants_targets: []
+    path: "/pages/nos-champs-dintervention"
+    file: content/fr/pages/nos-champs-dintervention/_index.html
   descendants_targets:
   - "/actualites/"
+  - "/nos-champs-dintervention/"
   - "/notre-projet-collaboratif/"
   - "/personnes/"
   - "/projets/"
