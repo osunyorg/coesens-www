@@ -24,38 +24,8 @@ items:
   target: "/personnes/"
   kind: page
   new_tab: false
-  children:
-  - title: Sylvain Couture
-    slug: sylvain-couture
-    target: "/personnes/sylvain-couture/"
-    kind: page
-    new_tab: false
-    children: []
-    descendants_targets: []
-    path: "/pages/personnes/sylvain-couture"
-    file: content/fr/pages/personnes/sylvain-couture/_index.html
-  - title: Clément Chabré
-    slug: clement-chabre
-    target: "/personnes/clement-chabre/"
-    kind: page
-    new_tab: false
-    children: []
-    descendants_targets: []
-    path: "/pages/personnes/clement-chabre"
-    file: content/fr/pages/personnes/clement-chabre/_index.html
-  - title: Mallory Carlu-Gérémie
-    slug: mallory-carlu-geremie
-    target: "/personnes/mallory-carlu-geremie/"
-    kind: page
-    new_tab: false
-    children: []
-    descendants_targets: []
-    path: "/pages/personnes/mallory-carlu-geremie"
-    file: content/fr/pages/personnes/mallory-carlu-geremie/_index.html
-  descendants_targets:
-  - "/personnes/clement-chabre/"
-  - "/personnes/mallory-carlu-geremie/"
-  - "/personnes/sylvain-couture/"
+  children: []
+  descendants_targets: []
   path: "/persons"
   file: content/fr/persons/_index.html
 - title: Champs d'intervention
