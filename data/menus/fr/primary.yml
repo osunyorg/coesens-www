@@ -10,15 +10,6 @@ items:
   descendants_targets: []
   path: "/projects"
   file: content/fr/projects/_index.html
-- title: Offres d'emploi
-  slug: offres-d-emploi
-  target: "/"
-  kind: page
-  new_tab: false
-  children: []
-  descendants_targets: []
-  path: "/jobs"
-  file: content/fr/jobs/_index.html
 - title: Actualités
   slug: actualites
   target: "/actualites/"
@@ -28,15 +19,6 @@ items:
   descendants_targets: []
   path: "/posts"
   file: content/fr/posts/_index.html
-- title: Agenda
-  slug: agenda
-  target: "/"
-  kind: page
-  new_tab: false
-  children: []
-  descendants_targets: []
-  path: "/events"
-  file: content/fr/events/_index.html
 - title: Organisations
   slug: organisations
   target: "/organisations/"
@@ -55,13 +37,4 @@ items:
   descendants_targets: []
   path: "/persons"
   file: content/fr/persons/_index.html
-- title: Expositions
-  slug: expositions
-  target: "/"
-  kind: page
-  new_tab: false
-  children: []
-  descendants_targets: []
-  path: "/exhibitions"
-  file: content/fr/exhibitions/_index.html
 
