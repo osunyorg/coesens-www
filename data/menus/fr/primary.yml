@@ -21,7 +21,7 @@ items:
   file: content/fr/pages/notre-projet-collaboratif/_index.html
 - title: Équipe
   slug: equipe
-  target: "/personnes/"
+  target: "/"
   kind: page
   new_tab: false
   children: []
@@ -39,7 +39,7 @@ items:
   file: content/fr/pages/nos-champs-dintervention/_index.html
 - title: Réalisations
   slug: realisations
-  target: "/projets/"
+  target: "/"
   kind: page
   new_tab: false
   children: []
