@@ -19,8 +19,8 @@ items:
   descendants_targets: []
   path: "/pages/notre-projet-collaboratif"
   file: content/fr/pages/notre-projet-collaboratif/_index.html
-- title: Équipe
-  slug: equipe
+- title: Notre équipe
+  slug: notre-equipe
   target: "/notre-equipe/"
   kind: page
   new_tab: false
