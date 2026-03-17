@@ -10,6 +10,9 @@ params:
   jobs:
     sitemap:
       ignore: true
+  projects:
+    sitemap:
+      ignore: true
   organizations:
     sitemap:
       ignore: true
