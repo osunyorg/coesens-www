@@ -1,9 +1,6 @@
 theme: osuny
 _merge: deep
 params:
-  persons:
-    sitemap:
-      ignore: true
   events:
     sitemap:
       ignore: true
