@@ -55,4 +55,13 @@ items:
   descendants_targets: []
   path: "/pages/contact"
   file: content/fr/pages/contact/_index.html
+- title: Réalisations
+  slug: realisations
+  target: "/nos-realisations/"
+  kind: page
+  new_tab: false
+  children: []
+  descendants_targets: []
+  path: "/pages/nos-realisations"
+  file: content/fr/pages/nos-realisations/_index.html
 
