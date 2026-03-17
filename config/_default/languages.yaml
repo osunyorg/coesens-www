@@ -9,6 +9,18 @@ fr:
   buildFuture: true
   params:
     contact_details:
+      emails:
+        email:
+          label: >-
+            contact@coesens.fr
+          value: >-
+            mailto:contact@coesens.fr
+      social_networks:
+        linkedin:
+          label: >-
+            coesens
+          value: >-
+            https://www.linkedin.com/company/coesens/
 
   taxonomies:
     administrator: administrators
