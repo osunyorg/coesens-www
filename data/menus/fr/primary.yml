@@ -19,6 +19,15 @@ items:
   descendants_targets: []
   path: "/pages/notre-projet-collaboratif"
   file: content/fr/pages/notre-projet-collaboratif/_index.html
+- title: Notre équipe
+  slug: notre-equipe
+  target: "/personnes/"
+  kind: page
+  new_tab: false
+  children: []
+  descendants_targets: []
+  path: "/persons"
+  file: content/fr/persons/_index.html
 - title: Champs d'intervention
   slug: champs-d-intervention
   target: "/nos-champs-dintervention/"
@@ -55,13 +64,4 @@ items:
   descendants_targets: []
   path: "/pages/contact"
   file: content/fr/pages/contact/_index.html
-- title: Notre équipe
-  slug: notre-equipe
-  target: "/personnes/"
-  kind: page
-  new_tab: false
-  children: []
-  descendants_targets: []
-  path: "/persons"
-  file: content/fr/persons/_index.html
 
