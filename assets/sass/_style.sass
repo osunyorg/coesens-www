@@ -7,12 +7,17 @@ a[target="_blank"]::after,
 footer .email::after
     content: "\eef3" !important
 
-// Main
-main
-  background-color: $color-background
-
 // Footer
 .footer-site address
-  @include meta
-  font-family: $heading-font-family
-  font-style: normal
+    @include meta
+    font-family: $heading-font-family
+    font-style: normal
+
+// Sticky footer layout
+body
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+
+main#main
+    flex: 1
