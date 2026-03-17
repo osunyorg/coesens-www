@@ -13,9 +13,6 @@ params:
   organizations:
     sitemap:
       ignore: true
-  projects:
-    sitemap:
-      ignore: true
   summary:
     position: hero
   search:
