@@ -46,6 +46,15 @@ items:
   descendants_targets: []
   path: "/pages/realisations"
   file: content/fr/pages/realisations/_index.html
+- title: Projets
+  slug: projets
+  target: "/projets/"
+  kind: page
+  new_tab: false
+  children: []
+  descendants_targets: []
+  path: "/projects"
+  file: content/fr/projects/_index.html
 - title: Actualités & Partage
   slug: actualites-partage
   target: "/actualites/"
