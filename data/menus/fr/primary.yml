@@ -10,8 +10,8 @@ items:
   descendants_targets: []
   path: "/"
   file: content/fr/_index.html
-- title: Projet collaboratif
-  slug: projet-collaboratif
+- title: Projet coopératif
+  slug: projet-cooperatif
   target: "/projet-collaboratif/"
   kind: page
   new_tab: false
