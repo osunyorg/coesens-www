@@ -62,7 +62,7 @@ children:
   - "pages/projet-collaboratif/_index.html"
   - "persons/_index.html"
   - "pages/champs-dintervention/_index.html"
-  - "pages/realisations/_index.html"
+  - "projects/_index.html"
   - "posts/_index.html"
   - "pages/contact/_index.html"
 child_pages:
@@ -78,10 +78,10 @@ child_pages:
     path: "/pages/champs-dintervention"
     slug: "champs-dintervention"
     file: "content/fr/pages/champs-dintervention/_index.html"
-  - permalink: "/realisations/"
-    path: "/pages/realisations"
-    slug: "realisations"
-    file: "content/fr/pages/realisations/_index.html"
+  - permalink: "/projets/"
+    path: "/projects"
+    slug: "projets"
+    file: "content/fr/projects/_index.html"
   - permalink: "/actualites/"
     path: "/posts"
     slug: "actualites"
@@ -169,7 +169,6 @@ contents:
     ranks:
       base: 2
       self: 2
-      children: 3
     top:
       active: true
       title: 
@@ -186,26 +185,8 @@ contents:
 
       layout: cards
       pages:
-        - permalink: "/realisations/projet-1/"
-          path: "/pages/realisations/projet-1"
-          slug: "projet-1"
-          file: "content/fr/pages/realisations/projet-1/_index.html"
-          name: >-
-            Ville de Brignais - Conseil des Ainés
-        - permalink: "/realisations/projet-2/"
-          path: "/pages/realisations/projet-2"
-          slug: "projet-2"
-          file: "content/fr/pages/realisations/projet-2/_index.html"
-          name: >-
-            Ville de Givors
-        - permalink: "/realisations/projet-3/"
-          path: "/pages/realisations/projet-3"
-          slug: "projet-3"
-          file: "content/fr/pages/realisations/projet-3/_index.html"
-          name: >-
-            Ecole 3A
 
-      quantity: 3
+      quantity: 0
 
 
   - kind: block
@@ -320,6 +301,7 @@ contents:
 
     ranks:
       base: 2
+      children: 2
     top:
       active: false
 
@@ -334,8 +316,26 @@ contents:
         year: true
 
       projects:
+        - permalink: "/projets/2026-ecole-ecologica/"
+          path: "/projects/2026/ecole-ecologica"
+          slug: "ecole-ecologica"
+          file: "content/fr/projects/2026/ecole-ecologica.html"
+          name: >-
+            Ecole Ecologica
+        - permalink: "/projets/2026-la-fabrique-des-communs-pedagogiques/"
+          path: "/projects/2026/la-fabrique-des-communs-pedagogiques"
+          slug: "la-fabrique-des-communs-pedagogiques"
+          file: "content/fr/projects/2026/la-fabrique-des-communs-pedagogiques.html"
+          name: >-
+            La Fabrique des Communs Pédagogiques
+        - permalink: "/projets/2026-relief/"
+          path: "/projects/2026/relief"
+          slug: "relief"
+          file: "content/fr/projects/2026/relief.html"
+          name: >-
+            RELIEF
 
-      quantity: 0
+      quantity: 3
 
 
 ---
