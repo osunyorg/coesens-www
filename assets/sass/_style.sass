@@ -37,12 +37,23 @@ main#main
 // Call to action block
 .page-homepage .block-class-homepage-cta-block .actions a:first-child
     @include button-icon(external-link-line)
+    justify-content: flex-start
+    --btn-min-width: auto
     --btn-color: #{$color-background}
     --btn-background: #{$color-accent}
     --btn-border: 1px solid #{$color-accent}
     --btn-hover-color: #{$color-accent}
     --btn-hover-background: #{$color-background-hero}
     --btn-hover-border: 1px solid #{$color-accent}
+
+
+// Categories block
+.block-class-homepage-categories-block article .media
+    img
+        object-fit: unset
+        aspect-ratio: unset
+        width: 50%
+        height: auto
 
 // Key figures block
 .block-key_figures li:nth-child(1) strong
@@ -56,6 +67,6 @@ main#main
 
 // PROJECTS PAGE
 
-// Projects list
+// Projects list block
 .block-class-project-list .media img
     border-radius: 0 2.5rem 2.5rem 2.5rem
