@@ -13,7 +13,7 @@ footer .email::after
     font-family: $heading-font-family
     font-style: normal
 
-// Sticky footer layout
+// Sticky footer layout + font smoothing
 body
     display: flex
     flex-direction: column
@@ -54,6 +54,49 @@ main#main
         aspect-ratio: unset
         width: 50%
         height: auto
+
+// Projects block
+.block-class-homepage-projects-block
+    @include media-breakpoint-down(desktop)
+        .top .description
+            font-family: $lead-sidebar-font-family
+            font-size: var(--lead-sidebar-size)
+            font-weight: $lead-sidebar-weight
+            line-height: var(--lead-sidebar-line-height)
+            letter-spacing: $lead-sidebar-letter-spacing
+    @include in-page-without-sidebar
+        .top
+            @include top-flex
+            .description
+                font-family: $lead-sidebar-font-family
+                font-size: var(--lead-sidebar-size)
+                font-weight: $lead-sidebar-weight
+                line-height: var(--lead-sidebar-line-height)
+                letter-spacing: $lead-sidebar-letter-spacing
+                width: auto
+
+.block-class-homepage-projects-block
+    background-color: $color-background-alt
+    padding-top: var(--grid-gutter)
+    padding-bottom: var(--grid-gutter)
+    .projects--grid
+        @include layout-cards($block-pages-card-page-background, $block-pages-card-page-background-hover, $block-pages-card-page-color, $block-pages-card-page-color-hover)
+        article
+            .media
+                background: $block-pages-card-page-background
+                img
+                    object-fit: contain
+            .project-content
+                display: flex
+                flex-direction: column
+                flex: 1
+            .project-description
+                display: flex
+                flex-direction: column
+                flex: 1
+            .more
+                margin-top: auto
+                padding-top: $spacing-4
 
 // Key figures block
 .block-key_figures li:nth-child(1) strong
