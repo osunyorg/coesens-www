@@ -24,8 +24,8 @@ main#main
 
 // HOMEPAGE
 
-// Hero CTA button
-.hero .hero-actions .btn
+// Hero
+.page-homepage .btn
     @include button-icon(arrow-right-line)
     --btn-color: #{$color-background}
     --btn-background: #{$color-accent}
@@ -34,7 +34,17 @@ main#main
     --btn-hover-background: #{$color-background-hero}
     --btn-hover-border: 1px solid #{$color-accent}
 
-// Homepage key figures colors
+// Call to action block
+.page-homepage .block-class-homepage-cta-block .actions a:first-child
+    @include button-icon(external-link-line)
+    --btn-color: #{$color-background}
+    --btn-background: #{$color-accent}
+    --btn-border: 1px solid #{$color-accent}
+    --btn-hover-color: #{$color-accent}
+    --btn-hover-background: #{$color-background-hero}
+    --btn-hover-border: 1px solid #{$color-accent}
+
+// Key figures block
 .block-key_figures li:nth-child(1) strong
     color: $color-accent
 
@@ -46,6 +56,6 @@ main#main
 
 // PROJECTS PAGE
 
-// Projects list images - rounded corners (top-right, bottom-right, bottom-left)
+// Projects list
 .block-class-project-list .media img
     border-radius: 0 2.5rem 2.5rem 2.5rem
