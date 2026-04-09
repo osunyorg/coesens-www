@@ -1,3 +1,5 @@
+// GLOBAL
+
 // Hyperlink icon
 a[target="_blank"]::after,
 .btn[target="_blank"]::after
@@ -21,6 +23,8 @@ body
 
 main#main
     flex: 1
+
+
 
 // HOMEPAGE
 
@@ -48,15 +52,20 @@ main#main
 
 
 // Categories block
-.block-class-homepage-categories-block article .media
-    img
-        object-fit: unset
-        aspect-ratio: unset
-        width: 50%
-        height: auto
+.block-class-homepage-categories-block
+    .top
+        a
+            @include icon(arrow-right-line, after, true)
+            @include hover-translate-icon
+            text-decoration: none
 
-// Projects block
-.block-class-homepage-projects-block
+    article .media
+        img
+            object-fit: unset
+            aspect-ratio: unset
+            width: 50%
+            height: auto
+
     @include media-breakpoint-down(desktop)
         .top .description
             font-family: $lead-sidebar-font-family
@@ -64,6 +73,7 @@ main#main
             font-weight: $lead-sidebar-weight
             line-height: var(--lead-sidebar-line-height)
             letter-spacing: $lead-sidebar-letter-spacing
+
     @include in-page-without-sidebar
         .top
             @include top-flex
@@ -75,10 +85,31 @@ main#main
                 letter-spacing: $lead-sidebar-letter-spacing
                 width: auto
 
+// Projects block
 .block-class-homepage-projects-block
     background-color: $color-background-alt
     padding-top: var(--grid-gutter)
     padding-bottom: var(--grid-gutter)
+
+    @include media-breakpoint-down(desktop)
+        .top .description
+            font-family: $lead-sidebar-font-family
+            font-size: var(--lead-sidebar-size)
+            font-weight: $lead-sidebar-weight
+            line-height: var(--lead-sidebar-line-height)
+            letter-spacing: $lead-sidebar-letter-spacing
+
+    @include in-page-without-sidebar
+        .top
+            @include top-flex
+            .description
+                font-family: $lead-sidebar-font-family
+                font-size: var(--lead-sidebar-size)
+                font-weight: $lead-sidebar-weight
+                line-height: var(--lead-sidebar-line-height)
+                letter-spacing: $lead-sidebar-letter-spacing
+                width: auto
+
     .projects--grid
         @include layout-cards($block-pages-card-page-background, $block-pages-card-page-background-hover, $block-pages-card-page-color, $block-pages-card-page-color-hover)
         article
@@ -107,6 +138,8 @@ main#main
 
 .block-key_figures li:nth-child(3) strong
     color: $color-key-figure-orange
+
+
 
 // PROJECTS PAGE
 
