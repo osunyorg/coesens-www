@@ -1,5 +1,17 @@
 // GLOBAL
 
+// Hero image alignment
+@include media-breakpoint-up(desktop)
+    .hero--with-image
+        .content
+            figure
+                margin-top: $spacing-5
+                width: pxToRem(448)
+                flex-shrink: 0
+                img
+                    height: pxToRem(448)
+                    object-fit: cover
+
 // Hyperlink icon
 a[target="_blank"]::after,
 .btn[target="_blank"]::after
@@ -24,8 +36,6 @@ body
 main#main
     flex: 1
 
-
-
 // HOMEPAGE
 
 // Hero
@@ -34,22 +44,10 @@ main#main
     --btn-color: #{$color-background}
     --btn-background: #{$color-accent}
     --btn-border: 1px solid #{$color-accent}
+    --btn-border-radius: 0.7rem
     --btn-hover-color: #{$color-accent}
     --btn-hover-background: #{$color-background-hero}
     --btn-hover-border: 1px solid #{$color-accent}
-
-// Call to action block
-.page-homepage .block-class-homepage-cta-block .actions a:first-child
-    @include button-icon(external-link-line)
-    justify-content: flex-start
-    --btn-min-width: auto
-    --btn-color: #{$color-background}
-    --btn-background: #{$color-accent}
-    --btn-border: 1px solid #{$color-accent}
-    --btn-hover-color: #{$color-accent}
-    --btn-hover-background: #{$color-background}
-    --btn-hover-border: 1px solid #{$color-accent}
-
 
 // Categories block
 .block-class-homepage-categories-block
@@ -148,9 +146,22 @@ main#main
 .block-class-posts-list-block .media img
     border-radius: 0 2.5rem 2.5rem 2.5rem
 
-// CTA block
+// Call to action block
 
 .block-class-homepage-cta-block
+    .page-homepage &
+        .actions a:first-child
+            @include button-icon(external-link-line)
+            justify-content: flex-start
+            --btn-min-width: auto
+            --btn-color: #{$color-background}
+            --btn-background: #{$color-accent}
+            --btn-border: 1px solid #{$color-accent}
+            --btn-border-radius: 0.7rem
+            --btn-hover-color: #{$color-accent}
+            --btn-hover-background: #{$color-background}
+            --btn-hover-border: 1px solid #{$color-accent}
+
     .call_to_action .description p
         font-family: $lead-sidebar-font-family
         font-size: var(--lead-sidebar-size)
