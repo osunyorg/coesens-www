@@ -59,6 +59,10 @@ main#main
             @include hover-translate-icon
             text-decoration: none
 
+    article
+        *:where([class$="-title"])
+            @include h3
+
     article .media
         img
             object-fit: unset
@@ -138,6 +142,8 @@ main#main
 
 .block-key_figures li:nth-child(3) strong
     color: $color-key-figure-orange
+
+// Posts list block
 
 
 
