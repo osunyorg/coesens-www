@@ -13,8 +13,6 @@
                     object-fit: cover
 
 // Hero background
-
-// Hero background
 .persons__page,
 .posts__page,
 .projects__page
@@ -185,11 +183,19 @@ main#main
         line-height: var(--lead-sidebar-line-height)
         letter-spacing: $lead-sidebar-letter-spacing
 
-
-
-
 // PROJECTS PAGE
 
-// Projects list block
-.block-class-project-list .media img
-    border-radius: 0 2.5rem 2.5rem 2.5rem
+// Projects section
+.projects__section
+    .projects--grid
+        @include media-breakpoint-up(desktop)
+            grid-template-columns: repeat(3, 1fr)
+        .media img
+            aspect-ratio: 16 / 9
+            object-fit: contain
+            width: 100%
+        .more
+            display: none
+        .project-title a
+            @include icon(arrow-right-line, after, true)
+            @include hover-translate-icon(after)
