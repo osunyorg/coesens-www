@@ -183,6 +183,25 @@ main#main
         line-height: var(--lead-sidebar-line-height)
         letter-spacing: $lead-sidebar-letter-spacing
 
+
+// AREAS OF EXPERTISE PAGE
+
+body main .block-class-gallery-area-of-expertise
+    @include media-breakpoint-up(desktop)
+        .gallery
+            @include flexbox-grid(4)
+    .gallery img
+                aspect-ratio: 1
+                width: 100%
+                object-fit: contain
+
+.block-class-links-area-of-expertise
+    ul li .media img
+        object-fit: cover
+    @include media-breakpoint-up(desktop)
+        .links
+            grid-template-columns: repeat(3, 1fr)
+
 // PROJECTS PAGE
 
 // Projects section
