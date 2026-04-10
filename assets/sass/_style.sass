@@ -184,6 +184,7 @@ main#main
         letter-spacing: $lead-sidebar-letter-spacing
 
 
+
 // AREAS OF EXPERTISE PAGE
 
 body main .block-class-gallery-area-of-expertise
@@ -203,6 +204,8 @@ body main .block-class-gallery-area-of-expertise
         .links
             grid-template-columns: repeat(3, 1fr)
 
+
+
 // PROJECTS PAGE
 
 // Projects section
@@ -219,3 +222,16 @@ body main .block-class-gallery-area-of-expertise
         .project-title a
             @include icon(arrow-right-line, after, true)
             @include hover-translate-icon(after)
+
+
+
+
+// POSTS PAGE
+
+.posts__section
+    .posts--list
+        .media img
+            aspect-ratio: 3 / 2
+            object-fit: cover
+            width: 100%
+            border-radius: 0 2.5rem 2.5rem 2.5rem
