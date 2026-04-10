@@ -187,6 +187,21 @@ main#main
 
 // AREAS OF EXPERTISE PAGE
 
+// Categories block
+.block-class-categories-areas-of-expertise
+    @include media-breakpoint-up(desktop)
+        .categories--grid
+            grid-template-columns: repeat(3, 1fr)
+    article .media img
+            object-fit: unset
+            aspect-ratio: unset
+            width: 50%
+            height: auto
+    article *:where([class$="-title"])
+        @include h3
+
+
+// Gallery block
 body main .block-class-gallery-area-of-expertise
     @include media-breakpoint-up(desktop)
         .gallery
@@ -196,6 +211,7 @@ body main .block-class-gallery-area-of-expertise
                 width: 100%
                 object-fit: contain
 
+// Links block
 .block-class-links-area-of-expertise
     ul li .media img
         object-fit: cover
@@ -228,6 +244,7 @@ body main .block-class-gallery-area-of-expertise
 
 // POSTS PAGE
 
+// Posts section
 .posts__section
     .posts--list
         .media img
