@@ -1,6 +1,6 @@
 // GLOBAL
 
-// Hero image alignment
+// Hero image
 @include media-breakpoint-up(desktop)
     .hero--with-image
         .content
@@ -10,9 +10,20 @@
                 flex-shrink: 0
                 img
                     height: pxToRem(448)
-                    object-fit: cover
+                    object-fit: contain
+                    object-position: top
 
-// Hero background
+// Hero image on project categories pages
+.projects_categories__term
+    @include media-breakpoint-up(desktop)
+        .hero--with-image
+            .content
+                figure
+                    width: pxToRem(336)
+                    img
+                        height: pxToRem(336)
+
+// Hero background on persons, posts and projects pages
 .persons__page,
 .posts__page,
 .projects__page
@@ -43,6 +54,8 @@ body
 
 main#main
     flex: 1
+
+
 
 // HOMEPAGE
 
@@ -222,7 +235,7 @@ body main .block-class-gallery-area-of-expertise
 
 
 
-// PROJECTS PAGE
+// PROJECTS LIST PAGE
 
 // Projects section
 .projects__section
@@ -241,8 +254,22 @@ body main .block-class-gallery-area-of-expertise
 
 
 
+// PROJECTS BY CATEGORY PAGE
 
-// POSTS PAGE
+// Projects section
+.projects_categories__term
+    .projects--grid
+        @include media-breakpoint-up(desktop)
+            grid-template-columns: repeat(3, 1fr)
+        .more
+            display: none
+        .project-title a
+            @include icon(arrow-right-line, after, true)
+            @include hover-translate-icon(after)
+
+
+
+// POSTS LIST  PAGE
 
 // Posts section
 .posts__section

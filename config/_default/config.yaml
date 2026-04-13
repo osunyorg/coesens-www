@@ -1,5 +1,7 @@
 theme: osuny
 _merge: deep
+pagination:
+  pagerSize: 12
 params:
   events:
     sitemap:
