@@ -14,7 +14,7 @@ params:
       ignore: true
   projects:
     sitemap:
-      ignore: true
+      ignore: false
     default_image: false
     date_format: "2006"
     index:

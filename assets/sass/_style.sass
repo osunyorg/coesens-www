@@ -1,17 +1,19 @@
 // GLOBAL
 
 // Hero image
-@include media-breakpoint-up(desktop)
-    .hero--with-image
+.hero--with-image
+    .content
+        figure
+            img
+                height: pxToRem(448)
+                object-fit: contain
+                object-position: top
+    @include media-breakpoint-up(desktop)
         .content
             figure
                 margin-top: $spacing-5
                 width: pxToRem(448)
                 flex-shrink: 0
-                img
-                    height: pxToRem(448)
-                    object-fit: contain
-                    object-position: top
 
 // Hero image on project categories pages
 .projects_categories__term
@@ -23,10 +25,40 @@
                     img
                         height: pxToRem(336)
 
-// Hero background on persons, posts and projects pages
-.persons__page,
+// Hero image on posts and projects single pages
 .posts__page,
 .projects__page
+    .hero--with-image
+        .content
+            figure
+                width: 100%
+                max-width: pxToRem(560)
+                margin-left: 0
+                margin-right: auto
+                flex-shrink: 0
+                img
+                    height: auto
+                    max-height: pxToRem(560)
+                    width: 100%
+                    max-width: pxToRem(560)
+        @include media-breakpoint-up(desktop)
+            .content
+                figure
+                    margin-left: unset
+                    margin-right: unset
+
+// Hero background
+@include media-breakpoint-down(desktop)
+    .hero--image-portrait,
+    .hero--image-square
+        margin-bottom: 0
+        figure
+            margin-bottom: 0
+
+// Hero background on persons, posts, projects and contact pages
+.persons__page,
+.posts__page,
+.projects__page,
     .hero
         background: $color-background
         background-color: $color-background
@@ -46,7 +78,6 @@ footer .email::after
     font-family: $heading-font-family
     font-style: normal
 
-// Sticky footer layout + font smoothing
 body
     display: flex
     flex-direction: column
@@ -238,14 +269,21 @@ body main .block-class-gallery-area-of-expertise
 // PROJECTS LIST PAGE
 
 // Projects section
+.projects__section,
+.projects_categories__term
+    @include media-breakpoint-down(md)
+        .projects--grid .project .media
+            margin-left: 0
+            margin-right: 0
+
 .projects__section
     .projects--grid
         @include media-breakpoint-up(desktop)
             grid-template-columns: repeat(3, 1fr)
-        .media img
-            aspect-ratio: 16 / 9
-            object-fit: contain
-            width: 100%
+            .media img
+                aspect-ratio: 16 / 9
+                object-fit: contain
+                width: 100%
         .more
             display: none
         .project-title a
@@ -274,8 +312,8 @@ body main .block-class-gallery-area-of-expertise
 // Posts section
 .posts__section
     .posts--list
-        .media img
-            aspect-ratio: 3 / 2
-            object-fit: cover
-            width: 100%
-            border-radius: 0 2.5rem 2.5rem 2.5rem
+            .media img
+                aspect-ratio: 3 / 2
+                object-fit: cover
+                width: 100%
+                border-radius: 0 clamp(1rem, 4vw, 2.5rem) clamp(1rem, 4vw, 2.5rem) clamp(1rem, 4vw, 2.5rem)
