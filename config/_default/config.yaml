@@ -15,6 +15,29 @@ params:
   projects:
     sitemap:
       ignore: true
+    default_image: false
+    date_format: "2006"
+    index:
+      layout: grid # alternate | grid | large | list
+      options:
+        categories: true
+        image: true
+        subtitle: true
+        summary: true
+        year: false
+      truncate_description: 200 # Set to 0 to disable truncate
+    single:
+      navigation:
+        reversed: false
+    share_links: # Optional
+      enabled: true
+      email: true
+      facebook: false
+      linkedin: true
+      mastodon: false
+      telegram: false
+      twitter: false
+      whatsapp: false
   organizations:
     sitemap:
       ignore: true
