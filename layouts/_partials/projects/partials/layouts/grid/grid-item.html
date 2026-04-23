@@ -1,2 +1,0 @@
-{{ $options := merge .options (dict "categories" false "year" false) }}
-{{ partial "projects/partials/project.html" (merge . (dict "options" $options "with_more" true)) }}

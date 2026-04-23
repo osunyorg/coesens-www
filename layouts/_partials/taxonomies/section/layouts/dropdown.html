@@ -1,4 +1,4 @@
-{{ $categories := partial "GetObjectsFromPathSlice" .taxonomy.categories }}
+{{ $categories := partial "helpers/objects/GetFromPathSlice" .taxonomy.categories }}
 {{ $name := .taxonomy.name }}
 {{ if eq $name "Catégories" }}
   {{ $name = "Champs d'intervention" }}
