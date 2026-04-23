@@ -13,3 +13,76 @@ Cache-Control = "max-age=31536000, no-transform, public"
 for = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.webp"]
 [headers.values]
 Cache-Control = "max-age=31536000, no-transform, public"
+
+[[redirects]]
+from = "/projets/2026-relief/"
+to = "/projets/2021-relief/"
+
+[[redirects]]
+from = "/projets/2026-ecole-ecologica/"
+to = "/projets/2022-ecole-ecologica/"
+
+[[redirects]]
+from = "/mallory-carlu-geremie/"
+to = "/personnes/mallory-carlu-geremie/"
+
+[[redirects]]
+from = "/projets/2026-ecole-3a/"
+to = "/projets/2023-ecole-3a/"
+
+[[redirects]]
+from = "/actualites/2026-03-05-actualite-2/"
+to = "/actualites/2026-03-04-actualite-2/"
+
+[[redirects]]
+from = "/clement-chabre/"
+to = "/personnes/clement-chabre/"
+
+[[redirects]]
+from = "/notre-projet-collaboratif/"
+to = "/projet-collaboratif/"
+
+[[redirects]]
+from = "/actualites/2026-03-17-actualite-2/"
+to = "/actualites/2026-03-04-actualite-2/"
+
+[[redirects]]
+from = "/projets/2026-ville-de-givors/"
+to = "/projets/2024-ville-de-givors/"
+
+[[redirects]]
+from = "/actualites/2026-03-17-actualite-5/"
+to = "/actualites/2026-03-01-actualite-5/"
+
+[[redirects]]
+from = "/projets/2026-la-fabrique-des-communs-pedagogiques/"
+to = "/projets/2020-la-fabrique-des-communs-pedagogiques/"
+
+[[redirects]]
+from = "/sylvain-couture/"
+to = "/personnes/sylvain-couture/"
+
+[[redirects]]
+from = "/projets/2026-ville-de-brignais-conseil-des-aines/"
+to = "/projets/2025-ville-de-brignais-conseil-des-aines/"
+
+[[redirects]]
+from = "/2026-la-fabrique-des-communs-pedagogiques/"
+to = "/projets/2020-la-fabrique-des-communs-pedagogiques/"
+
+[[redirects]]
+from = "/actualites/2026-03-04-actualite-3/"
+to = "/actualites/2026-03-03-actualite-3/"
+
+[[redirects]]
+from = "/actualites/2026-03-17-actualite-3/"
+to = "/actualites/2026-03-03-actualite-3/"
+
+[[redirects]]
+from = "/nos-champs-dintervention/"
+to = "/champs-dintervention/"
+
+[[redirects]]
+from = "/actualites/2026-03-17-actualite-4/"
+to = "/actualites/2026-03-02-actualite-4/"
+
