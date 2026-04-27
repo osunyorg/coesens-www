@@ -126,6 +126,15 @@ main#main
     @include media-breakpoint-up(desktop)
         --btn-padding: #{pxToRem(18)} #{$spacing-4}
 
+// Gallery block
+body .block-class-grid-areas-of-expertise.block-gallery--grid
+    @include media-breakpoint-up(desktop)
+        .gallery
+            @include flexbox-grid(6)
+            figure
+                img
+                    width: 80%
+
 // Projects block
 .block-class-homepage-projects-block
     background-color: $color-background-alt
