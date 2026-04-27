@@ -1,5 +1,26 @@
 // GLOBAL
 
+// First column of each row
+.block-class-chapter-collective-projects,
+.block-class-chapter-persons-support
+    @include media-breakpoint-up(desktop)
+        margin-left: Max(0px, calc((100% - var(--grid-max-width)) / 2))
+        .container
+            padding-left: var(--grid-gutter)
+
+// Third column of each row
+.block-class-chapter-social-impact,
+.block-class-chapter-training
+    @include media-breakpoint-up(desktop)
+        .container
+            padding-right: var(--grid-gutter)
+
+// Clear float after the last chapter
+.block-class-chapter-training
+    + *
+        @include media-breakpoint-up(desktop)
+            clear: both
+
 // Hero image
 .hero--with-image
     .content
@@ -104,44 +125,6 @@ main#main
     --btn-padding: #{pxToRem(12)} #{$spacing-3}
     @include media-breakpoint-up(desktop)
         --btn-padding: #{pxToRem(18)} #{$spacing-4}
-
-// Categories block
-.block-class-homepage-categories-block
-    .top
-        a
-            @include icon(arrow-right-line, after, true)
-            @include hover-translate-icon
-            text-decoration: none
-
-    article
-        *:where([class$="-title"])
-            @include h3
-
-    article .media
-        img
-            object-fit: unset
-            aspect-ratio: unset
-            width: 50%
-            height: auto
-
-    @include media-breakpoint-down(desktop)
-        .top .description
-            font-family: $lead-sidebar-font-family
-            font-size: var(--lead-sidebar-size)
-            font-weight: $lead-sidebar-weight
-            line-height: var(--lead-sidebar-line-height)
-            letter-spacing: $lead-sidebar-letter-spacing
-
-    @include in-page-without-sidebar
-        .top
-            @include top-flex
-            .description
-                font-family: $lead-sidebar-font-family
-                font-size: var(--lead-sidebar-size)
-                font-weight: $lead-sidebar-weight
-                line-height: var(--lead-sidebar-line-height)
-                letter-spacing: $lead-sidebar-letter-spacing
-                width: auto
 
 // Projects block
 .block-class-homepage-projects-block
