@@ -1,26 +1,5 @@
 // GLOBAL
 
-// First column of each row
-.block-class-chapter-collective-projects,
-.block-class-chapter-persons-support
-    @include media-breakpoint-up(desktop)
-        margin-left: Max(0px, calc((100% - var(--grid-max-width)) / 2))
-        .container
-            padding-left: var(--grid-gutter)
-
-// Third column of each row
-.block-class-chapter-social-impact,
-.block-class-chapter-training
-    @include media-breakpoint-up(desktop)
-        .container
-            padding-right: var(--grid-gutter)
-
-// Clear float after the last chapter
-.block-class-chapter-training
-    + *
-        @include media-breakpoint-up(desktop)
-            clear: both
-
 // Hero image
 .hero--with-image
     .content
@@ -166,7 +145,7 @@ body .block-class-grid-areas-of-expertise.block-gallery--grid
             .media
                 background: $block-pages-card-page-background
                 img
-                    object-fit: contain
+                    object-fit: cover
             .project-content
                 display: flex
                 flex-direction: column
@@ -292,6 +271,10 @@ body main .block-class-gallery-area-of-expertise
     .projects--grid
         @include media-breakpoint-up(desktop)
             grid-template-columns: repeat(3, 1fr)
+            .media img
+                aspect-ratio: 16 / 9
+                object-fit: contain
+                width: 100%
         .more
             display: none
         .project-title a
