@@ -52,7 +52,11 @@ to = "/champs-dintervention/"
 
 [[redirects]]
 from = "/projets/2022-ecole-ecologica/index.html"
-to = "/projets/2026-ecole-ecologica/"
+to = "/projets/2025-ecole-ecologica/"
+
+[[redirects]]
+from = "/projets/2026-ecole-ecologica/index.html"
+to = "/projets/2025-ecole-ecologica/"
 
 [[redirects]]
 from = "/projets/2024-ville-de-givors/index.html"
