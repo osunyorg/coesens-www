@@ -40,15 +40,19 @@ to = "/personnes/sylvain-couture/"
 
 [[redirects]]
 from = "/actualites/2026-03-04-actualite-3/index.html"
-to = "/actualites/2026-03-03-actualite-3/"
+to = "/actualites/2026-03-03-rencontres-regionales-relief-26-27-mars-2026/"
 
 [[redirects]]
 from = "/actualites/2026-03-17-actualite-3/index.html"
-to = "/actualites/2026-03-03-actualite-3/"
+to = "/actualites/2026-03-03-rencontres-regionales-relief-26-27-mars-2026/"
 
 [[redirects]]
 from = "/nos-champs-dintervention/index.html"
 to = "/champs-dintervention/"
+
+[[redirects]]
+from = "/actualites/2026-03-03-actualite-3/index.html"
+to = "/actualites/2026-03-03-rencontres-regionales-relief-26-27-mars-2026/"
 
 [[redirects]]
 from = "/projets/2022-ecole-ecologica/index.html"
