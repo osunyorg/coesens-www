@@ -23,10 +23,6 @@ from = "/mallory-carlu-geremie/index.html"
 to = "/personnes/mallory-carlu-geremie/"
 
 [[redirects]]
-from = "/actualites/2026-03-05-actualite-2/index.html"
-to = "/actualites/2026-03-04-actualite-2/"
-
-[[redirects]]
 from = "/clement-chabre/index.html"
 to = "/personnes/clement-chabre/"
 
@@ -35,16 +31,8 @@ from = "/notre-projet-collaboratif/index.html"
 to = "/projet-collaboratif/"
 
 [[redirects]]
-from = "/actualites/2026-03-17-actualite-2/index.html"
-to = "/actualites/2026-03-04-actualite-2/"
-
-[[redirects]]
 from = "/projets/2026-ville-de-givors/index.html"
 to = "/projets/2024-ville-de-givors/"
-
-[[redirects]]
-from = "/actualites/2026-03-17-actualite-5/index.html"
-to = "/actualites/2026-03-01-actualite-5/"
 
 [[redirects]]
 from = "/sylvain-couture/index.html"
@@ -61,8 +49,4 @@ to = "/actualites/2026-03-03-actualite-3/"
 [[redirects]]
 from = "/nos-champs-dintervention/index.html"
 to = "/champs-dintervention/"
-
-[[redirects]]
-from = "/actualites/2026-03-17-actualite-4/index.html"
-to = "/actualites/2026-03-02-actualite-4/"
 
