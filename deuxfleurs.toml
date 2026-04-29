@@ -32,7 +32,7 @@ to = "/projet-collaboratif/"
 
 [[redirects]]
 from = "/projets/2026-ville-de-givors/index.html"
-to = "/projets/2024-ville-de-givors/"
+to = "/projets/2025-ville-de-givors/"
 
 [[redirects]]
 from = "/sylvain-couture/index.html"
@@ -49,4 +49,8 @@ to = "/actualites/2026-03-03-actualite-3/"
 [[redirects]]
 from = "/nos-champs-dintervention/index.html"
 to = "/champs-dintervention/"
+
+[[redirects]]
+from = "/projets/2024-ville-de-givors/index.html"
+to = "/projets/2025-ville-de-givors/"
 
