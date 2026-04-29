@@ -15,10 +15,6 @@ for = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.webp"]
 Cache-Control = "max-age=31536000, no-transform, public"
 
 [[redirects]]
-from = "/projets/2026-ecole-ecologica/index.html"
-to = "/projets/2022-ecole-ecologica/"
-
-[[redirects]]
 from = "/mallory-carlu-geremie/index.html"
 to = "/personnes/mallory-carlu-geremie/"
 
@@ -53,6 +49,10 @@ to = "/actualites/2026-03-03-actualite-3/"
 [[redirects]]
 from = "/nos-champs-dintervention/index.html"
 to = "/champs-dintervention/"
+
+[[redirects]]
+from = "/projets/2022-ecole-ecologica/index.html"
+to = "/projets/2026-ecole-ecologica/"
 
 [[redirects]]
 from = "/projets/2024-ville-de-givors/index.html"
