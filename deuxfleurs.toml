@@ -23,6 +23,10 @@ from = "/mallory-carlu-geremie/index.html"
 to = "/personnes/mallory-carlu-geremie/"
 
 [[redirects]]
+from = "/projets/2021-relief/index.html"
+to = "/projets/2024-relief/"
+
+[[redirects]]
 from = "/clement-chabre/index.html"
 to = "/personnes/clement-chabre/"
 
