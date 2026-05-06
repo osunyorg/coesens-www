@@ -1,0 +1,95 @@
+// HOMEPAGE
+
+// Gallery block
+body .block-class-grid-areas-of-expertise.block-gallery--grid
+    @include media-breakpoint-up(desktop)
+        .gallery
+            @include flexbox-grid(6)
+            figure
+                img
+                    width: 80%
+
+// Projects block
+.block-class-homepage-projects-block
+    background-color: $color-background-alt
+    padding-top: var(--grid-gutter)
+    padding-bottom: var(--grid-gutter)
+
+    @include media-breakpoint-down(desktop)
+        .top .description
+            font-family: $lead-sidebar-font-family
+            font-size: var(--lead-sidebar-size)
+            font-weight: $lead-sidebar-weight
+            line-height: var(--lead-sidebar-line-height)
+            letter-spacing: $lead-sidebar-letter-spacing
+
+    @include in-page-without-sidebar
+        .top
+            @include top-flex
+            .description
+                font-family: $lead-sidebar-font-family
+                font-size: var(--lead-sidebar-size)
+                font-weight: $lead-sidebar-weight
+                line-height: var(--lead-sidebar-line-height)
+                letter-spacing: $lead-sidebar-letter-spacing
+                width: auto
+
+    .projects--grid
+        @include layout-cards($block-pages-card-page-background, $block-pages-card-page-background-hover, $block-pages-card-page-color, $block-pages-card-page-color-hover)
+        article
+            .media
+                background: $block-pages-card-page-background
+                img
+                    object-fit: cover
+            .project-content
+                display: flex
+                flex-direction: column
+                flex: 1
+            .project-description
+                display: flex
+                flex-direction: column
+                flex: 1
+            .more
+                margin-top: auto
+                padding-top: $spacing-4
+
+// Key figures block
+.block-key_figures li:nth-child(1) strong
+    color: $color-accent
+
+.block-key_figures li:nth-child(2) strong
+    color: $color-key-figure-blue
+
+.block-key_figures li:nth-child(3) strong
+    color: $color-key-figure-orange
+
+// Posts list block
+
+.block-class-posts-list-block .media img
+    border-radius: 0 2.5rem 2.5rem 2.5rem
+
+// Call to action block
+
+.block-class-homepage-cta-block
+    .page-homepage &
+        .actions a:first-child
+            @include button-icon(external-link-line)
+            justify-content: flex-start
+            --btn-min-width: auto
+            --btn-color: #{$color-background}
+            --btn-background: #{$color-accent}
+            --btn-border: 1px solid #{$color-accent}
+            --btn-border-radius: 0.7rem
+            --btn-hover-color: #{$color-accent}
+            --btn-hover-background: #{$color-background}
+            --btn-hover-border: 1px solid #{$color-accent}
+            --btn-padding: #{pxToRem(12)} #{$spacing-3}
+            @include media-breakpoint-up(desktop)
+                --btn-padding: #{pxToRem(18)} #{$spacing-4}
+
+    .call_to_action .description p
+        font-family: $lead-sidebar-font-family
+        font-size: var(--lead-sidebar-size)
+        font-weight: $lead-sidebar-weight
+        line-height: var(--lead-sidebar-line-height)
+        letter-spacing: $lead-sidebar-letter-spacing

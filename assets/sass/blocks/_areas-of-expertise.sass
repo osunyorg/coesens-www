@@ -1,0 +1,34 @@
+// AREAS OF EXPERTISE PAGE
+
+// Categories block
+.block-class-categories-areas-of-expertise
+    @include media-breakpoint-up(desktop)
+        .categories--grid
+            grid-template-columns: repeat(3, 1fr)
+    article .media img
+            object-fit: unset
+            aspect-ratio: unset
+            width: 50%
+            height: auto
+    article *:where([class$="-title"])
+        @include h3
+
+
+// Gallery block
+body main .block-class-gallery-area-of-expertise
+    @include media-breakpoint-up(desktop)
+        .gallery
+            @include flexbox-grid(4)
+    .gallery img
+                aspect-ratio: 1
+                width: 100%
+                object-fit: contain
+
+// Links block
+.block-class-links-area-of-expertise
+    ul li .media img
+        object-fit: cover
+        object-position : top
+    @include media-breakpoint-up(desktop)
+        .links
+            grid-template-columns: repeat(3, 1fr)

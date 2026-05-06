@@ -1,0 +1,167 @@
+// GLOBAL
+
+// Hero image
+.hero--with-image
+    .content
+        figure
+            img
+                height: pxToRem(448)
+                object-fit: contain
+                object-position: top
+    @include media-breakpoint-up(desktop)
+        .content
+            figure
+                margin-top: $spacing-5
+                width: pxToRem(448)
+                flex-shrink: 0
+
+@include media-breakpoint-down(desktop)
+    .hero--image-portrait,
+    .hero--image-square
+        margin-bottom: 0
+        figure
+            margin-bottom: 0
+
+// Hero image on posts and projects single pages
+.posts__page,
+.projects__page
+    .hero--with-image
+        .content
+            figure
+                width: 100%
+                max-width: pxToRem(560)
+                margin-left: 0
+                margin-right: auto
+                flex-shrink: 0
+                img
+                    height: auto
+                    max-height: pxToRem(560)
+                    width: 100%
+                    max-width: pxToRem(560)
+        @include media-breakpoint-up(desktop)
+            .content
+                figure
+                    margin-left: unset
+                    margin-right: unset
+
+// Hero color background on persons, single posts, single projects and contact pages
+.persons__page,
+.posts__page,
+.projects__page,
+.page-contact
+    .hero
+        background: $color-background
+        background-color: $color-background
+
+// Hyperlink icon
+a[target="_blank"]::after,
+.btn[target="_blank"]::after
+    content: none !important
+
+// Email icon
+footer .email::after
+    content: "\eef3" !important
+
+// Footer
+.footer-site address
+    @include meta
+    font-family: $heading-font-family
+    font-style: normal
+
+body
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+
+main#main
+    flex: 1
+
+
+
+// HOMEPAGE
+
+// Hero
+.page-homepage .btn
+    @include button-icon(arrow-right-line)
+    --btn-color: #{$color-background}
+    --btn-background: #{$color-accent}
+    --btn-border: 1px solid #{$color-accent}
+    --btn-border-radius: 0.7rem
+    --btn-hover-color: #{$color-accent}
+    --btn-hover-background: #{$color-background-hero}
+    --btn-hover-border: 1px solid #{$color-accent}
+    --btn-padding: #{pxToRem(12)} #{$spacing-3}
+    @include media-breakpoint-up(desktop)
+        --btn-padding: #{pxToRem(18)} #{$spacing-4}
+
+
+
+// PROJECTS LIST PAGE
+
+// Projects section
+.projects__section,
+.projects_categories__term
+    @include media-breakpoint-down(md)
+        .projects--grid .project .media
+            margin-left: 0
+            margin-right: 0
+
+.projects__section
+    .projects--grid
+        @include media-breakpoint-up(desktop)
+            grid-template-columns: repeat(3, 1fr)
+            .media img
+                aspect-ratio: 16 / 9
+                object-fit: contain
+                width: 100%
+        .more
+            display: none
+        .project-title a
+            @include icon(arrow-right-line, after, true)
+            @include hover-translate-icon(after)
+
+
+
+// PROJECTS BY CATEGORY PAGE
+
+// Projects section
+.projects_categories__term
+    .projects--grid
+        @include media-breakpoint-up(desktop)
+            grid-template-columns: repeat(3, 1fr)
+            .media img
+                aspect-ratio: 16 / 9
+                object-fit: contain
+                width: 100%
+        .more
+            display: none
+        .project-title a
+            @include icon(arrow-right-line, after, true)
+            @include hover-translate-icon(after)
+
+// Hero image on project categories pages
+.projects_categories__term
+    @include media-breakpoint-up(desktop)
+        .hero--with-image
+            .content
+                figure
+                    width: pxToRem(336)
+                    img
+                        height: pxToRem(336)
+
+
+
+// POSTS LIST PAGE
+
+// Posts section
+.posts__section
+    .posts--list
+        @include media-breakpoint-down(desktop)
+            article .media
+                max-width: 100%
+                width: 100%
+        .media img
+            aspect-ratio: 3 / 2
+            object-fit: cover
+            width: 100%
+            border-radius: 0 clamp(1rem, 4vw, 2.5rem) clamp(1rem, 4vw, 2.5rem) clamp(1rem, 4vw, 2.5rem)

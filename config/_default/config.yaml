@@ -51,6 +51,12 @@ params:
   home:
     head:
       title: site
+  image_sizes:
+    sections:
+      posts:
+        layouts:
+          list:
+            mobile: 400
   posts:
     default_image: false
     date_format: ":date_long"
