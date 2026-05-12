@@ -28,7 +28,7 @@ to = "/personnes/clement-chabre/"
 
 [[redirects]]
 from = "/notre-projet-collaboratif/index.html"
-to = "/projet-collaboratif/"
+to = "/projet-cooperatif/"
 
 [[redirects]]
 from = "/projets/2026-ville-de-givors/index.html"
@@ -45,6 +45,10 @@ to = "/actualites/2026-03-03-rencontres-regionales-relief-26-27-mars-2026/"
 [[redirects]]
 from = "/actualites/2026-03-17-actualite-3/index.html"
 to = "/actualites/2026-03-03-rencontres-regionales-relief-26-27-mars-2026/"
+
+[[redirects]]
+from = "/projet-collaboratif/index.html"
+to = "/projet-cooperatif/"
 
 [[redirects]]
 from = "/nos-champs-dintervention/index.html"
