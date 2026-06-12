@@ -15,12 +15,12 @@ for = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.webp"]
 Cache-Control = "max-age=31536000, no-transform, public"
 
 [[redirects]]
-from = "/mallory-carlu-geremie/index.html"
-to = "/personnes/mallory-carlu-geremie/"
+from = "/projets/2024-relief/index.html"
+to = "/projets/2021-relief/"
 
 [[redirects]]
-from = "/projets/2021-relief/index.html"
-to = "/projets/2024-relief/"
+from = "/mallory-carlu-geremie/index.html"
+to = "/personnes/mallory-carlu-geremie/"
 
 [[redirects]]
 from = "/clement-chabre/index.html"
